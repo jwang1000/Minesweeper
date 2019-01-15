@@ -1,7 +1,7 @@
 /*
  * MINESWEEPER PROJECT
  * Written by Jonathan Wang
- * Sep 13, 2017 - Nov 15
+ * Sep 13 - Nov 15, 2017
  * Part 1 Sep 13 - 14
  * Part 2 Sep 15
  * Part 3 Sep 19 - 20
@@ -57,7 +57,7 @@ public class Minesweeper
 {
     // initialize fields
     @SuppressWarnings("FieldMayBeFinal")
-    // uhh I guess NetBeans works with this?? Well, it's better than yellow lines.
+    
     ArrayList<Integer> mineNumbers = new ArrayList();
     int mines;
     int rows;
@@ -104,7 +104,7 @@ public class Minesweeper
     // science world
     public static void main(String[] args) 
     {
-        new Minesweeper();  // run the code thing
+        new Minesweeper();  // run the code
     }
 
     // constructor
@@ -139,24 +139,6 @@ public class Minesweeper
                 if (playing)
                 {
                     time++;
-                    
-                    if (time < 1000)
-                    {
-                        timerLabel.setText(Integer.toString(time));
-
-                        if (time == 69)
-                            timerLabel.setText("( ͡° ͜ʖ ͡°)");
-                        else if (time == 420)
-                            timerLabel.setText("BLAZE IT");
-                    }
-                    else if (time < 2000)
-                        timerLabel.setText("¯\\_(ツ)_/¯");
-                    else if (time < 3000)
-                        timerLabel.setText("u suck");
-                    else if (time < 5000)
-                        timerLabel.setText("biologist");
-                    else
-                        timerLabel.setText("geologist");
                 }
             }
         }

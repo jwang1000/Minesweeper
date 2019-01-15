@@ -52,8 +52,8 @@ public class Button extends JButton
         value = inValue;
     }
     
-    // both getLocation and location don't work for method names...
-    // apparently they are both taken in the JButton class or something.
+    // both getLocation and location don't work for method names
+    // they are both used in the JButton class
     public int[] buttonLocation()
     {
         return location;
