@@ -5,4 +5,4 @@ Saves and reads files from C:\Users\Public
 
 Written in Netbeans IDE
 
-Optimised for 1920x1080 screens
+Optimised for 1920x1080 or lower resolution screens
