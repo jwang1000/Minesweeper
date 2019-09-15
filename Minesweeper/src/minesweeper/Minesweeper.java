@@ -16,12 +16,16 @@
  *  - Custom grid size added Sep 29
  *  - First click is always on a 0 added Oct 2
  *  - Option Panel (for small windows) added Oct 3
+ *  - ¯\_(ツ)_/¯ added Oct 4
  * Assignment 7 Nov 6 - 15
  *  - File reading added Nov 6, fixed Nov 9
  *  - High scores table added Nov 7
  *  - File writing added (finished) Nov 9
  *  - Name writing added Nov 14
  *  - File creating added Nov 15
+ *
+ * TODO: fix double clicking also triggering left/right click
+ *  - important when double clicking an unexposed square
  *
  * 11 * 11 is minimum grid size for all button text to show
  */
@@ -135,6 +139,7 @@ public class Minesweeper
                 if (playing)
                 {
                     time++;
+                    timerLabel.setText(Integer.toString(time));
                 }
             }
         }
